@@ -1,0 +1,64 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>产品图册</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #111; display: flex; flex-direction: column; align-items: center; }
+        .page { width: 100%; max-width: 750px; display: block; margin: 0 auto; vertical-align: bottom; }
+    </style>
+</head>
+<body>
+    <div id="gallery"></div>
+
+    <script>
+        // ⚠️【只需改这里】：把数字 10 改成你实际的图片总页数
+        const totalPages = 3; 
+
+        const gallery = document.getElementById('gallery');
+        for (let i = 1; i <= totalPages; i++) {
+            const img = document.createElement('img');
+            img.src = `images/${i}.jpg`;
+            img.className = 'page';
+            // 第一页立即加载，后面的图片向下滚动时再懒加载，扫码秒开！
+            img.loading = i === 1 ? 'eager' : 'lazy';
+            gallery.appendChild(img);
+        }
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>产品图册</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #111; display: flex; flex-direction: column; align-items: center; }
+        .page { width: 100%; max-width: 750px; display: block; margin: 0 auto; vertical-align: bottom; }
+    </style>
+</head>
+<body>
+    <div id="gallery"></div>
+
+    <script>
+        // ⚠️【只需改这里】：把数字 10 改成你实际的图片总页数
+        const totalPages = 3; 
+
+        const gallery = document.getElementById('gallery');
+        for (let i = 1; i <= totalPages; i++) {
+            const img = document.createElement('img');
+            img.src = `images/${i}.jpg`;
+            img.className = 'page';
+            // 第一页立即加载，后面的图片向下滚动时再懒加载，扫码秒开！
+            img.loading = i === 1 ? 'eager' : 'lazy';
+            gallery.appendChild(img);
+        }
+    </script>
+</body>
+>>>>>>> 6c108662d21fd1852a93b0dd1bccc0a53035f9db
+</html>
