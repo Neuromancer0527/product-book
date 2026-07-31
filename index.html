@@ -12,8 +12,11 @@
 </head>
 <body>
 
-    <!-- 使用 PDF.js 引擎强制将 PDF 转化为滑动页面，完美兼容 iPhone 原生扫码 -->
-    <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=/web/catalog.pdf"></iframe>
+    <!-- 
+      核心修改点：在链接末尾加上了 #toolbar=0&navpanes=0&scrollbar=1
+      这会强制隐藏 PDF.js 顶部的所有工具栏和侧边栏，只留纯净的 PDF 文件展示
+    -->
+    <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://newlightsoldout.fun/web/catalog.pdf#toolbar=0&navpanes=0&scrollbar=1"></iframe>
 
 </body>
 </html>
